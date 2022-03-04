@@ -73,7 +73,3 @@ class LocationNotifier:
         val_filtered = list(filter(lambda v: v.endswith('동'), val_filtered))
         val_filtered = list(set(val_filtered))
         return val_filtered
-
-
-addresses = LocationNotifier().get_all_address()
-print(addresses)
